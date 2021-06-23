@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>memberInputForm.jsp</title>
 </head>
 <body>
-	<jsp:forward page="home.do" />
+<div align="center">
+	<div><h1>여기는 멤버 정보를 입력하는 곳</h1></div>
+</div>
 </body>
 </html>

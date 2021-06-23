@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="co.jiwon.prj.research.map.ResearchMap">
-	<insert id="researchInsert">
 	
+	<insert id="researchInsert">
 	</insert>
 	
 	<update id="researchUpdate">
-	
 	</update>
 	
 	<select id="researchSelectList" resultType="co.jiwon.prj.research.vo.ResearchVO">

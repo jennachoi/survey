@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Select;
 import co.jiwon.prj.research.vo.ResearchVO;
 
 public interface ResearchMap {
-	@Select("select * from research")
+	
 	List<ResearchVO> researchSelectList();
 	
 	@Select("select * from research where id = #{id}")

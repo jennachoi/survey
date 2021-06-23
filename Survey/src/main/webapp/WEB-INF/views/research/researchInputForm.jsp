@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<jsp:forward page="home.do" />
+<div align="center">
+<div>여기는 설문조사 입력페이지</div>
+<div>
+	<form></form>
+</div>
+</div>
 </body>
 </html>
