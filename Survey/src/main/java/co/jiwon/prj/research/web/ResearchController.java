@@ -54,14 +54,10 @@ public class ResearchController {
 		List<ResearchResponseVO> list = new ArrayList<ResearchResponseVO>();
 		ResearchResponseVO vo = new ResearchResponseVO();
 		
-		int len = Integer.parseInt(req.getParameter("len")); // 문항 전체길이
-		String[] val = req.getParameterValues("qid");
+		//int len = Integer.parseInt(req.getParameter("len")); // 문항 전체길이
 		
-		int qid = Integer.parseInt(req.getParameter("qid"));
-		int order = Integer.parseInt(req.getParameter("qorder"));
-	
 		String[] result = req.getParameterValues("qResult[${q.qOrder }]");
-		
+
 		/* 넘겨받을 값 : responseid, qid, order, 결과값
 			int id, qid, order
 			qResult[1] 동일한 객체로
