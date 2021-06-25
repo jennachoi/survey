@@ -10,17 +10,17 @@ public class ResearchResponseVO {
 	QRESULT    NOT NULL VARCHAR2(1000) 
 	*/
 	
-	private int responseId;
+//	private int responseId;
 	private int qId;
 	private int qOrder;
 	private String qResult;
 
-	public int getResponseId() {
-		return responseId;
-	}
-	public void setResponseId(int responseId) {
-		this.responseId = responseId;
-	}
+//	public int getResponseId() {
+//		return responseId;
+//	}
+//	public void setResponseId(int responseId) {
+//		this.responseId = responseId;
+//	}
 	public int getqId() {
 		return qId;
 	}

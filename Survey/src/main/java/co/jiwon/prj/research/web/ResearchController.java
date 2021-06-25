@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import co.jiwon.prj.research.service.ResearchQuestionService;
@@ -16,6 +17,7 @@ import co.jiwon.prj.research.service.ResearchService;
 import co.jiwon.prj.research.vo.ResearchQuestionVO;
 import co.jiwon.prj.research.vo.ResearchResponseVO;
 import co.jiwon.prj.research.vo.ResearchVO;
+import co.jiwon.prj.research.vo.ResultVO;
 
 @Controller
 public class ResearchController {
@@ -29,7 +31,7 @@ public class ResearchController {
 	private ResearchResponseService responseDao;
 	
 	@RequestMapping("researchList.do")
-	public String researchList(Model model) {
+	public String researchList(@ModelAttribute("lists") ResultVO vo, Model model) {
 		model.addAttribute("lists", researchDao.researchSelectList());
 		return "research/researchList";
 	}
